@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping cart project</title>
+    <link rel="stylesheet" href="Style/all.css"/>
+    <link rel="stylesheet" href="Style/navbar.css"/>
+    <link rel="stylesheet" href="Style/cart.css"/>
+    <link rel="stylesheet" href="Style/main.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top ">
+            <!--menu-->
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="Picture/logo.png" alt="Logo" style="width:80px;">
+            </a>
+            <ul class="navbar-nav mr-auto ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Information</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+            <div class="container acc">
+                <img class="col avatar" src="Picture/Avatar.jpg" alt="avatar" style="max-width: 90px";/>
+                <div class="col acc-info">
+                    <h5 class="row acc-first-name">NGUYEN</h5>
+                    <h5 class="row acc-last-name">Le Hoang</h5>
+                    <p class="row acc-money">Coins: <span class="coin">500</span>$</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="cart">
+        <h1 class="basket">Basket</h1>
+        <div class="calculator">
+            <div class="cal-title">
+                <h5 class="title-item">Item</h5>
+                <h5 class="title-price">Price</h5>
+                <h5 class="title-quantity">Quantity</h5>
+            </div>
+            <div class="items"></div>
+            <div class="total">
+                <hr>
+                <h2 class="total-info">Total: <span class="sum">0$</span></h2>
+            </div>
+        </div>
+        <div class="decision">
+            <button type="button" class="btn btn-primary buy"><i class="fas fa-shopping-cart"> Buy</i></button>
+            <button type="button" class="btn btn-danger clear"><i class="fas fa-trash-alt"> Clear</i></button>
+        </div>
+    </div>
+    <div class="main container-fluid no-gutter" style="margin-left: 25%; width: 75%;">
+        <div class="main-menu">
+            <h1 style="text-decoration: underline">MENU</h1>
+        </div>
+        <div class="category">
+            <button class="button-display" data-id="All">All</button>
+            <button class="button-display" data-id="Breakfast">Breakfast</button>
+            <button class="button-display" data-id="Lunch">Lunch</button>
+            <button class="button-display" data-id="Snack">Snack</button>
+            <button class="button-display" data-id="Dinner">Dinner</button>
+            <button class="button-display" data-id="Drink">Drink</button>
+        </div>
+        <div class="container">
+            <div class="row row-cols-2 justify-content-around menu-section">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/4e95a10d30.js" crossorigin="anonymous"></script>
+</body>
+</html>
